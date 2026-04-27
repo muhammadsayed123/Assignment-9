@@ -5,7 +5,7 @@ import img from '../../public/favicon.svg'
 
 const Navbar = () => {
   return (
-    <div className=" md:w-9/12 mx-auto mt-3 mb-3">
+    <div className=" md:w-9/12 sm:w-11/12 mx-auto mt-3 mb-3">
       <div className="flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
             <img src={img} alt="" className="w-7 h-7"/>
