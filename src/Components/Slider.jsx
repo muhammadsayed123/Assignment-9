@@ -20,7 +20,7 @@ function Slider() {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
 
-      className="h-[300px] md:h-[450px] w-full"
+      className="h-75 md:h-112 w-full"
     >
       <SwiperSlide>
         <img src={img_1} alt="" style={{ width: "100%", height: "100%"  }} />

@@ -13,7 +13,7 @@ const ToyCard = ({ toy }) => {
           <img
             src={pictureURL}
             alt={toyName}
-            className="h-40 w-full max-w-[320px] sm:max-w-87 md:max-w-95 rounded-t-xl"
+            className="h-40 w-full max-w-[320px] sm:max-w-87 md:max-w-95 rounded-t-xl "
           />
           <div className="p-2 flex flex-col gap-1">
             <h1 className="font-bold text-xl">{toyName}</h1>

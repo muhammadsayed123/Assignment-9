@@ -10,7 +10,7 @@ const Root = () => {
       <div className="border-b-3 text-yellow-500">
         <Navbar></Navbar>
       </div>
-      <div className="main">
+      <div className="min-h-[calc(100vh-295px)]">
         <Outlet></Outlet>
       </div>
       <div>

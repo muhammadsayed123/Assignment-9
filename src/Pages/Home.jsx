@@ -20,7 +20,7 @@ const Home = () => {
           </h1>
           <p className="text-gray-500">Loved by kids, trusted by families</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-2 w-10/12 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-2 w-10/12 mx-auto ">
             {
                 toyData.map(data=> (<ToyCard key={data.toyId} toy={data}></ToyCard>))
             }
