@@ -4,15 +4,15 @@ import { FaStar } from "react-icons/fa6";
 import { Link } from "react-router";
 
 const ToyCard = ({ toy }) => {
-  console.log(toy);
+  //   console.log(toy);
   const { toyId, toyName, price, rating, availableQuantity, pictureURL } = toy;
   return (
     <div>
       <div className="w-full max-w-[320px] sm:max-w-87 md:max-w-95 mx-auto bg-white rounded-xl flex flex-col h-full ">
         <div>
           <img
-            src={pictureURL || "https://via.placeholder.com/150"} 
-  alt={toyName}
+            src={pictureURL}
+            alt={toyName}
             className="h-40 w-full max-w-[320px] sm:max-w-87 md:max-w-95 rounded-t-xl"
           />
           <div className="p-2 flex flex-col gap-1">
@@ -24,10 +24,16 @@ const ToyCard = ({ toy }) => {
               </p>
               <p className="text-red-500 flex items-center gap-1">
                 <BiAdjust />
-                {availableQuantity} left</p>
+                {availableQuantity} left
+              </p>
             </div>
             <h1 className="font-medium mb-1">$ {price}</h1>
-            <Link to={`/productDetails/${toyId}`} className="btn bg-amber-600 rounded-2xl">View More</Link>
+            <Link
+              to={`/productDetails/${toyId}`}
+              className="btn bg-amber-600 rounded-2xl"
+            >
+              View More
+            </Link>
           </div>
         </div>
       </div>

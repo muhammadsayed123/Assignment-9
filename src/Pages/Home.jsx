@@ -9,7 +9,7 @@ const dataPromise = fetch("toyData.json").then((res) => res.json());
 const Home = () => {
 
     const toyData=use(dataPromise)
-    console.log(toyData)
+    // console.log(toyData)
   return (
     <div>
       <Slider></Slider>
