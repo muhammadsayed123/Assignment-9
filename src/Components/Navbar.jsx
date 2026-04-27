@@ -1,0 +1,27 @@
+// import React from 'react';
+
+import { Link, NavLink } from "react-router";
+import img from '../../public/favicon.svg'
+
+const Navbar = () => {
+  return (
+    <div className=" md:w-9/12 mx-auto mt-3 mb-3">
+      <div className="flex justify-between items-center">
+        <Link to="/" className="flex items-center gap-2">
+            <img src={img} alt="" className="w-7 h-7"/>
+          <h1 className="font-bold text-3xl text-amber-600 ">
+            Toy <span className="text-indigo-500">Topia</span>
+          </h1>
+        </Link>
+        <div className="flex gap-5">
+          <NavLink to="/" className="btn bg-yellow-500 rounded-3xl ">Home</NavLink>
+          <NavLink to="/login" className="btn bg-orange-500 rounded-3xl text-amber-50">
+            Login
+          </NavLink>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
