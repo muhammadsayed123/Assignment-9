@@ -3,6 +3,7 @@
 import { useParams } from "react-router";
 import useProduct from "../Hook/useProduct";
 import { FaStar } from "react-icons/fa6";
+import TryCard from "./TryCard";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -20,14 +21,14 @@ const ProductDetails = () => {
   return (
     <div className="bg-orange-100 min-h-120">
       <div className=" md:w-9/12 sm:w-11/12 mx-auto flex gap-10 py-10">
-        <div className="">
+        <div className="left-div flex-1">
           <img
             src={singleProduct.pictureURL}
             alt=""
             className="h-75 w-120"
           />
         </div>
-        <div className="">
+        <div className="right-div flex-1">
           <h1 className="font-extrabold text-3xl">{singleProduct.toyName}</h1>
           <h1 className="font-bold text-2xl text-amber-600 py-3">${singleProduct.price}</h1>
           <div className="flex gap-10">
@@ -40,6 +41,7 @@ const ProductDetails = () => {
             </p>
           </div>
           <p className="text-gray-600 py-5">{singleProduct.description}</p>
+          <TryCard></TryCard>
         </div>
       </div>
     </div>

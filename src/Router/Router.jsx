@@ -3,6 +3,7 @@ import Root from "../Root/Root";
 import Login from "../Pages/Login";
 import Home from "../Pages/Home";
 import ProductDetails from "../Components/ProductDetails";
+import Register from "../Pages/Register";
 
 const router = createBrowserRouter([
     {
@@ -20,8 +21,19 @@ const router = createBrowserRouter([
             {
                 path:"/login",
                 element:<Login></Login>
+            },
+            {
+                path:"/register",
+                element:<Register></Register>
             }
         ]
+    },
+    {
+        
+    },
+    {
+        path:'*',
+        element:<h2>Error 404</h2>
     }
 ]);
 
