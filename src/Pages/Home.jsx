@@ -6,6 +6,17 @@ import ToyCard from "../Components/ToyCard";
 
 const dataPromise = fetch("toyData.json").then((res) => res.json());
 
+// const dataPromise= fetch('toyData.json')
+//   .then(res => {
+//     if (!res.ok) {
+//        console.error("dfhs");
+//     }
+//     return res.json();
+//   })
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err));
+
+
 const Home = () => {
 
     const toyData=use(dataPromise)

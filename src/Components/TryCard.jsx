@@ -4,7 +4,7 @@ const TryCard = () => {
   return (
     <div>
       <form action="" className="bg-white p-5 rounded-4xl">
-        <div class="card-header flex justify-center items-center font-bold text-3xl">
+        <div className="card-header flex justify-center items-center font-bold text-3xl">
           <span>🎮</span>
           <h1>Try This Toy!</h1>
         </div>
