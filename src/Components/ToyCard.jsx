@@ -8,7 +8,9 @@ const ToyCard = ({ toy }) => {
   const { toyId, toyName, price, rating, availableQuantity, pictureURL } = toy;
   return (
     <div>
-      <div className="w-full max-w-[320px] sm:max-w-87 md:max-w-95 mx-auto bg-white rounded-xl flex flex-col h-full ">
+      <div className="w-full max-w-[320px] sm:max-w-87 md:max-w-95 mx-auto bg-white rounded-xl flex flex-col h-full shadow-md hover:shadow-xl
+      transition-transform duration-300 ease-in-out
+      hover:-translate-y-2 cursor-pointer">
         <div>
           <img
             src={pictureURL}
@@ -30,7 +32,8 @@ const ToyCard = ({ toy }) => {
             <h1 className="font-medium mb-1">$ {price}</h1>
             <Link
               to={`/productDetails/${toyId}`}
-              className="btn bg-amber-600 rounded-2xl"
+              className="btn bg-amber-600 rounded-2xl transition-all duration-300
+            hover:bg-amber-700 hover:scale-95"
             >
               View More
             </Link>

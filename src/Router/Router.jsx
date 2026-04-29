@@ -5,6 +5,7 @@ import Home from "../Pages/Home";
 import ProductDetails from "../Components/ProductDetails";
 import Register from "../Pages/Register";
 import PrivateRouter from "../Provider/PrivateRouter";
+import Error from "../Pages/Error";
 
 const router = createBrowserRouter([
     {
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
     },
     {
         path:'*',
-        element:<h2>Error 404</h2>
+        element:<Error></Error>
     }
 ]);
 

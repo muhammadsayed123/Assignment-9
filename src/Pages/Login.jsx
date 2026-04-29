@@ -7,6 +7,7 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../Firebase/firebase.config";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -48,6 +49,9 @@ const Login = () => {
 
   return (
     <div className="hero bg-base-200 min-h-screen ">
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl pb-5">
         <h2 className="font-bold text-2xl text-center mt-5">
           Login Your Account

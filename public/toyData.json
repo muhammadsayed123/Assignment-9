@@ -8,7 +8,7 @@
     "rating": 4.7,
     "availableQuantity": 75,
     "description": "A timeless set of 500 colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine — from houses to vehicles and entire cities! Compatible with all Lego sets.",
-    "pictureURL": "../src/Pic/pic_1.jfif",
+    "pictureURL": "https://i.ibb.co/tTF2h0N4/image.jpg",
     "subCategory": "Building Blocks"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.5,
     "availableQuantity": 42,
     "description": "A delightful 500-piece rainbow puzzle featuring vibrant colors and whimsical cloud designs. Perfect for kids aged 6+ to develop patience, concentration, and spatial thinking skills.",
-    "pictureURL": "../src/Pic/pic_2.jfif",
+    "pictureURL": "https://i.ibb.co/tpYcZYCP/image.jpg",
     "subCategory": "Puzzles"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.8,
     "availableQuantity": 28,
     "description": "Unearth your inner paleontologist! Dig through platforms to discover hidden dinosaur fossils. Includes 3 fossils, excavation tools, brush, and a full-color identification booklet with dino facts.",
-    "pictureURL": "../src/Pic/pic_3.jfif",
+    "pictureURL": "https://i.ibb.co/RGJrFgQD/image.jpg",
     "subCategory": "Science Kits"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.9,
     "availableQuantity": 55,
     "description": "Premium magnetic tiles that click together to form stunning 3D structures. Encourages STEM learning, geometry, color recognition, and architectural creativity. Safe rounded edges for toddlers.",
-    "pictureURL": "../src/Pic/pic_4.jfif",
+    "pictureURL": "https://i.ibb.co/q3nGHp9x/image.jpg",
     "subCategory": "Building Blocks"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.3,
     "availableQuantity": 80,
     "description": "An enchanting 18-piece tea party set featuring a pastel teapot, 4 cups, saucers, plates, and pretend food. Made from BPA-free plastic. Sparks imagination and develops social play skills.",
-    "pictureURL": "../src/Pic/pic_5.jfif",
+    "pictureURL": "https://i.ibb.co/JRFcm4Kc/image.jpg",
     "subCategory": "Pretend Play"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.6,
     "availableQuantity": 35,
     "description": "Safe foam rocket that launches up to 30 feet in the air! Pump-action blaster with 6 colorful foam rockets. Perfect for outdoor play, active kids, and backyard adventures.",
-    "pictureURL": "../src/Pic/pic_6.jfif",
+    "pictureURL": "https://i.ibb.co/GfBFK8jv/image.jpg",
     "subCategory": "Outdoor Play"
   },
   {
@@ -80,7 +80,7 @@
     "rating": 4.7,
     "availableQuantity": 22,
     "description": "A gorgeous 45-piece wooden train set with a figure-8 track, bridges, tunnels, trees, and 2 trains. Premium birch wood construction. Develops fine motor skills and imaginative play.",
-    "pictureURL": "../src/Pic/pic_7.jfif",
+    "pictureURL": "https://i.ibb.co/spzrg29t/image.jpg",
     "subCategory": "Vehicles"
   },
   {
@@ -92,7 +92,7 @@
     "rating": 4.4,
     "availableQuantity": 60,
     "description": "Make 10 different types of slime — glitter, magnetic, color-changing, glow-in-the-dark, and more! Everything included in one box. Non-toxic, mess-containment guarantee for parents.",
-    "pictureURL": "../src/Pic/pic_8.jfif",
+    "pictureURL": "https://i.ibb.co/Z6xwVqYb/image.jpg",
     "subCategory": "Science Kits"
   },
   {
@@ -104,7 +104,7 @@
     "rating": 4.6,
     "availableQuantity": 45,
     "description": "A complete art studio in a box! Includes 48 colored pencils, 24 watercolors, 12 acrylic paints, brushes, canvas boards, and a project idea booklet. For budding artists aged 5+.",
-    "pictureURL": "../src/Pic/pic_9.jfif",
+    "pictureURL": "https://i.ibb.co/kg08yXv6/image.jpg",
     "subCategory": "Arts & Crafts"
   },
   {
@@ -116,7 +116,7 @@
     "rating": 4.5,
     "availableQuantity": 30,
     "description": "High-speed RC off-road buggy with 2.4GHz control, 360° spins, and up to 25km/h speed. Waterproof shell, rechargeable battery, 40min play time. Works on carpet, grass, and outdoor terrain.",
-    "pictureURL": "../src/Pic/pic_10.jfif",
+    "pictureURL": "https://i.ibb.co/dZxY5x0/image.jpg",
     "subCategory": "Vehicles"
   }
 ]

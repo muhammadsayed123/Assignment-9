@@ -8,6 +8,7 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../Firebase/firebase.config";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -81,6 +82,9 @@ const Register = () => {
 
   return (
     <div className="hero bg-base-200 min-h-screen">
+      <Helmet>
+        <title>Registration</title>
+      </Helmet>
       <div className="card bg-base-100 w-full max-w-sm shrink-0 pb-5 shadow-2xl ">
         <h2 className="font-bold text-2xl text-center mt-5">
           Register Your Account
