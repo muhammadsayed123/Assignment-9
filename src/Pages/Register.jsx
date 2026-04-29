@@ -1,10 +1,11 @@
 // import React from 'react';
 
-import  { use } from "react";
+import  { use, useState } from "react";
 import { Link } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
+  const [error,setError]=useState()
   const { createUser,setUser } = use(AuthContext);
   const handleRegister = (e) => {
     e.preventDefault();
@@ -15,6 +16,22 @@ const Register = () => {
     const email = form.email.value;
     const photo = form.photo.value;
     const password = form.password.value;
+    if(!/[A-Z]/.test(password)){
+      setError("Password must contain at least one uppercase letter.")
+      return ;
+    }
+    if(!/[a-z]/.test(password)){
+      setError("Password must contain at least one lowercase letter.")
+      return ;
+    }
+    if(password.length < 6){
+      setError("Password must be at least 6 characters long.")
+      return ;
+    }
+    else {
+     setError("")
+    }
+
 
     console.log(name, email, photo, password);
     createUser(email, password)
@@ -83,6 +100,9 @@ const Register = () => {
             <p className="font-semibold text-center pt-3">
               Already have an account ? <Link to="/login">Login</Link>{" "}
             </p>
+            {
+              error && <p className="font-bold text-red-600">{error}</p>
+            }
           </fieldset>
         </form>
       </div>
