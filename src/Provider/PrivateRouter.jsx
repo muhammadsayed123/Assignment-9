@@ -10,7 +10,7 @@ const PrivateRouter = ({children}) => {
     const {user,loading}=use(AuthContext)
 
     const location= useLocation();
-    console.log(location)
+    // console.log(location)
 
     if(loading){
         return <Loading></Loading>

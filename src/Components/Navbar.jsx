@@ -5,6 +5,7 @@ import img from "../../public/favicon.svg";
 import userImg from '../Pic/userImg.png'
 import { use } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
@@ -13,10 +14,11 @@ const Navbar = () => {
 
     logOut()
       .then(() => {
-        alert("Logout");
+        // alert("Logout");
+        toast.success("Logout Successfully");
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
       });
   };
   return (

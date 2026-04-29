@@ -12,7 +12,7 @@ const ProductDetails = () => {
 
   const singleProduct = product.find((p) => String(p.toyId) === id);
 
-  console.log(singleProduct);
+  // console.log(singleProduct);
 
   if (loading) {
     return <div className="text-center py-20 text-2xl">Loading...</div>;
