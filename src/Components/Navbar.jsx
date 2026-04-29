@@ -2,6 +2,7 @@
 
 import { Link, NavLink } from "react-router";
 import img from "../../public/favicon.svg";
+import userImg from '../Pic/userImg.png'
 import { use } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
@@ -12,7 +13,7 @@ const Navbar = () => {
 
     logOut()
       .then(() => {
-        alert("Logout ");
+        alert("Logout");
       })
       .catch((error) => {
         console.log(error);
@@ -26,12 +27,21 @@ const Navbar = () => {
           <h1 className="font-bold text-3xl text-amber-600 ">
             Toy <span className="text-indigo-500">Topia</span>
           </h1>
-          <div>{user && user.email}</div>
+          {/* <div>{user && user.email}</div> */}
         </Link>
-        <div className="flex gap-5">
+
+        <div className="flex gap-1">
           <NavLink to="/" className="btn bg-yellow-500 rounded-xl">
             Home
           </NavLink>
+          <img
+            src={`${user ? user.photoURL : userImg}`}
+            alt=""
+            className="w-10 rounded-full"
+          />
+        </div>
+
+        <div className="flex gap-5">
           {user ? (
             <NavLink
               onClick={handleLogout}

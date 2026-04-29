@@ -64,7 +64,7 @@ const Login = () => {
               Login
             </button>
             <p className="font-semibold text-center pt-3">
-              Don't have an account ? <Link to="/register">Register</Link>{" "}
+              Don't have an account ? <Link to="/register" className="text-red-600">Register</Link>{" "}
             </p>
           </fieldset>
         </form>
